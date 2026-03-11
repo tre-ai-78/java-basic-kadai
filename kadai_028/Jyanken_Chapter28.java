@@ -17,9 +17,7 @@ public class Jyanken_Chapter28 {
 		
 		while( !input.equals("r") && !input.equals("s") && !input.equals("p")) {
 			System.out.println("正しいじゃんけんの手を入力してください");
-			scanner = new Scanner(System.in);
 			input = scanner.next();
-			System.out.println(input);
 		}
 		
 		scanner.close();
@@ -52,21 +50,21 @@ public class Jyanken_Chapter28 {
 		} else {
 			switch(myChoice) {
 			case "r":
-				if(randChoice == "s") {
+				if(randChoice.equals("s")) {
 					System.out.println("自分の勝ちです");
 				} else {
 					System.out.println("自分の負けです");
 				}
 				break;
 			case "s":
-				if(randChoice == "p") {
+				if(randChoice.equals("p")) {
 					System.out.println("自分の勝ちです");
 				} else {
 					System.out.println("自分の負けです");
 				}
 				break;
 			case "p":
-				if(randChoice == "r") {
+				if(randChoice.equals("r")) {
 					System.out.println("自分の勝ちです");
 				} else {
 					System.out.println("自分の負けです");
